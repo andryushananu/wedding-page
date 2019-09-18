@@ -1,0 +1,297 @@
+/* =============================
+    GENERAL STYLES
+=============================*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('assets/landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.name,
+.adress,
+.program,
+.quest,
+.gift,
+.contact {
+  width: 96%;
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 1.5rem
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+header {
+  background: url('assets/wedding.jpg') no-repeat 70% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.name {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.name_text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+
+.name_text h1 {
+  color: #d2ba87;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.f_text {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+.f_text::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: .5rem;
+}
+
+span {
+  color: #bd806e;
+}
+
+/* Location styles*/
+
+.adress img {
+  height: 7.5rem;
+}
+
+.adress h3 {
+  font-weight: 700;
+}
+
+.adress {
+  font-family: 'Muli', sans-serif;
+}
+
+.adress p {
+  line-height: .5rem;
+}
+
+.loc1::after,
+.loc2::after,
+.loc3::after {
+  display: block;
+  content: "";
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+/*Program styles*/
+
+.program {
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  width: 100vw;
+}
+
+.program li {
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: .025rem;
+}
+
+.program p {
+  font-style: italic;
+}
+
+/*Gift styles*/
+
+.gift img {
+  height: 7.5rem;
+  margin-top: 1rem;
+}
+
+.gift p {
+  margin-bottom: 0;
+}
+
+/*Questions styles*/
+
+.quest {
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  width: 100vw;
+  font-family: 'Muli', sans-serif;
+}
+
+.quest div::after {
+  display: block;
+  content: "";
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.quest1 {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: .5rem;
+}
+
+.answ {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/*Contact styles*/
+
+.contact {
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+/*Footer styles*/
+
+footer {
+  display: table;
+  background-color: #606060;
+  height: 10vh;
+  width: 100vw;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: .875rem;
+}
+
+footer p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/*Responsive styles*/
+
+@media (min-width: 700px) {
+  
+  header {
+    background: url('assets/wedding.jpg') no-repeat center/cover;
+  }
+  
+  .f_text {
+    text-transform: uppercase;
+  }
+  
+  .name_text h1 {
+    font-size: 5rem;
+  }
+  
+  .name_text {
+    width: 50%;
+    border-radius: 4px;
+    padding: 1.25rem
+  }
+  
+  .loc1,
+  .loc2,
+  .loc3 {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .loc1::after,
+  .loc2::after,
+  .loc3::after {
+    display: none;
+  }
+  
+  .adress p {
+    line-height: 1.3rem;
+  }
+  
+  .program li {
+    margin-left:35%;
+  }
+  
+  .quest div {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.2rem;
+    margin: .5rem;
+  }
+  
+  .quest div::after {
+    display: none;
+  }
+  
+  .quest h3 {
+    text-align: left;
+  }
+  
+  footer {
+    min-height: 7vh;
+  }
+}
